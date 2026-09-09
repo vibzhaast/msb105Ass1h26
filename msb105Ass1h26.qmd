@@ -1,0 +1,65 @@
+---
+title: "Er reproduserbarhet nok?"
+author: "Author Name"
+date: last-modified
+date-format: "dddd D MMM, YYYY"
+csl: apa7.csl
+# nynorsk
+lang: no-NN
+#lang: no-NB
+# for typst with bibtex
+citeproc: true
+papersize: a4
+format:
+  html: default
+  typst: default
+# krever at tinytex er installert
+#  pdf:
+#    papersize: a4
+bibliography: reproducibility.bib
+abstract: "Et kort sammendrag, en til to avsnitt."
+---
+
+## Introduksjon
+
+Hva handler artikkelen om?
+Hva blir diskutert?
+Hvorfor er dette viktig?
+
+## Litteraturgjennomgang
+
+Smarte synspunkt om emnet fra andre.
+
+Bruk minst 20 siteringer. Minst 5 må være nye relevante artikler om emnet som du har funnet selv.
+
+Benytt begge siteringsmåter,  dvs. «in-line» og på slutten av setningen. Prøv å variere siteringsteknikk for å få flyt i språket.
+
+Example:
+
+@gentleman2003 hevder at bla bla bla.
+Andre mener imidlertid bla bla [@goodman2016b; @ioannidis2005b].
+
+## Diskusjon av forskningsspørsmålet (problemstillingen)
+
+-   Burde replikerbarhet være et krav eller er det å be om for mye?
+-   Kan Quarto dokumenter hjelpe med å oppnå reproduserbarhet?
+-   Hvilke problem gjenstår og hvordan kan disse løses?
+
+## Konklusjon
+
+Noen kloke ord.
+
+## Referanser
+
+::: {#refs}
+:::
+
+## Appendiks A
+
+-   Versjon nummer og referanse til R pakken brukt i dokumentet
+-   R versjon brukt, med referanse
+
+## Appendiks B
+
+- Hvordan er KI brukt
+- Husk invitasjon til chat
