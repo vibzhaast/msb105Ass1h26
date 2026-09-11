@@ -24,6 +24,10 @@ abstract: "Et kort sammendrag, en til to avsnitt."
 
 Hva handler artikkelen om? Hva blir diskutert? Hvorfor er dette viktig?
 
+Reproduserbarhet handler om hvordan andre kan gjenskape forskningsresultater fra den opprinnelige utførste studien.
+
+Tillit til forskning avhenger av at resultater kan etterprøves og at en skal kunne gjenskape forskningstudier. Likevel har det vist seg at en andel fagfellesvurderte, prekliniske studier ikke er reproduserbare [@mcnutt2014].
+
 ## Litteraturgjennomgang
 
 Smarte synspunkt om emnet fra andre.
