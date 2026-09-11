@@ -24,11 +24,17 @@ abstract: "Et kort sammendrag, en til to avsnitt."
 
 Hva handler artikkelen om? Hva blir diskutert? Hvorfor er dette viktig?
 
-Reproduserbarhet handler om hvordan andre kan gjenskape forskningsresultater fra den opprinnelige utførste studien.
+Reproduserbarhet handler om hvordan andre kan gjenskape forskningsresultater fra den opprinnelige utførte studien.
 
 Tillit til forskning avhenger av at resultater kan etterprøves og at en skal kunne gjenskape forskningstudier. Likevel har det vist seg at en andel fagfellesvurderte, prekliniske studier ikke er reproduserbare [@mcnutt2014].
 
 ## Litteraturgjennomgang
+
+### Reproduserbarthet, replikerbarthet og generaliserbarhet
+
+Robust og pålitelig vitenskap ...
+
+National Sciende Foundation skiller robust og pålitelig vitenskap med tre forkjellige begreper; reproduserbarhet, replikerbarhet og generaliserbarhet. Reproduserbarhet handler om å gjenskape resultatene fra en studie ved å bruke nøyaktig samme data og kode som den opprinnelige studien. Replikerbarhet krever at man oppnår de samme resultatene med nye, selvstendig innsamlede data og generealiserbarhet handler om hvorvidt funnene holder også i andre kontekster og populasjoner **(bollen et al. 2015)**. @goodman2016
 
 Smarte synspunkt om emnet fra andre.
 
