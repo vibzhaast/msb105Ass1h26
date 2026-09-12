@@ -34,7 +34,15 @@ Tillit til forskning avhenger av at resultater kan etterprøves og at en skal ku
 
 Robust og pålitelig vitenskap ...
 
-National Sciende Foundation skiller robust og pålitelig vitenskap med tre forkjellige begreper; reproduserbarhet, replikerbarhet og generaliserbarhet. Reproduserbarhet handler om å gjenskape resultatene fra en studie ved å bruke nøyaktig samme data og kode som den opprinnelige studien. Replikerbarhet krever at man oppnår de samme resultatene med nye, selvstendig innsamlede data og generealiserbarhet handler om hvorvidt funnene holder også i andre kontekster og populasjoner **(bollen et al. 2015)**. @goodman2016
+National Sciende Foundation skiller robust og pålitelig vitenskap med tre forkjellige begreper; reproduserbarhet, replikerbarhet og generaliserbarhet. Reproduserbarhet handler om å gjenskape resultatene fra en studie ved å bruke nøyaktig samme data og kode som den opprinnelige studien. Replikerbarhet krever at man oppnår de samme resultatene med nye, selvstendig innsamlede data og generealiserbarhet handler om hvorvidt funnene holder også i andre kontekster og populasjoner **(bollen et al. 2015)**. @goodman2016 viser til et lignende poeng: å kalle noe reproduserbart sier først og fremst at man i teorien kan gejnta prosedyren, det sier ingenting om hvorvidt selve funnet er sant eller om det ville holdt seg dersom noen andre gjennomførte studien på ny. Reproduserbarhet er med andre ord det svakeste av de tre krevene og nettopp derfor er det interessant å spørre om det er tilstrekkelig alene.
+
+### Hvorfor reproduserbarhet ikke er nok
+
+Flere store replikasjonsstudier har vist at reproduserbarhet og replikerbarhet ikke er det samme i praksis. @nosek2015 forsøkte å replikere 100 psykologistudier fra tre anerkjente tidsskrifter, og fant at bare 36 prosent av replikasjonene ga signifikante resultater, mot 97 prosent i de opprinnelige studiene. @klein2018 gjennomførte en lignende undersøkelse av 28 klassiske funn og fant at bare 54 prosent ot seg replikere. Ingen av disse studiene bestrider at de opprinnelige resultetene i utgangspunktet var reproduserbare, koden kjørte, og tallene stemte. Problemet oppstår først når andre forskere, med nye data, forsøker å bekrefte de samme konklusjonene. Dette illustrerer et sentralt poeng: reproduserbarhet sier noe om hvorvidt man har gjort dte man sier man har gjort, ikke om hvorvidt konklusjonen faktisk er riktig. Mekanismer som publiseringsskjevhet og type 1-feil bidrar til dette gapet, fordi tidsskrifter i stor grad publiserer signifikante funn, mens studier som ikke finner noen effekt sjelden når frem [@rosenthal1979, @simmons2011].
+
+### Erfaringer fra økonomifaget
+
+Innen økonometri er situsjonen ofte enda mer grunnleggende: selv ren reproduserbarhet er vanskelig å oppnå. Journal of Money, Credit and Banking prosjektet fra 1982 forsøkte å etterprøve over 70 publiserte studier ved å be forfatterne om data og kode, men oppnådde full replikasjon for kun to av dem [@mccullough2008]. Selv etter at tidsskrifter innførte dataarkiver som skulle løse problemet, vsite @mccullough2008 at resultater publisert med tilgjengelig dara og kode likevel sjelden lot seg reprodusere i praksis.
 
 Smarte synspunkt om emnet fra andre.
 
