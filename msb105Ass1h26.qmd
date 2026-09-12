@@ -34,7 +34,7 @@ Tillit til forskning avhenger av at resultater kan etterprøves og at en skal ku
 
 Robust og pålitelig vitenskap ...
 
-National Sciende Foundation skiller robust og pålitelig vitenskap med tre forkjellige begreper; reproduserbarhet, replikerbarhet og generaliserbarhet. Reproduserbarhet handler om å gjenskape resultatene fra en studie ved å bruke nøyaktig samme data og kode som den opprinnelige studien. Replikerbarhet krever at man oppnår de samme resultatene med nye, selvstendig innsamlede data og generealiserbarhet handler om hvorvidt funnene holder også i andre kontekster og populasjoner **(bollen et al. 2015)**. @goodman2016 viser til et lignende poeng: å kalle noe reproduserbart sier først og fremst at man i teorien kan gejnta prosedyren, det sier ingenting om hvorvidt selve funnet er sant eller om det ville holdt seg dersom noen andre gjennomførte studien på ny. Reproduserbarhet er med andre ord det svakeste av de tre krevene og nettopp derfor er det interessant å spørre om det er tilstrekkelig alene.
+National Sciende Foundation skiller robust og pålitelig vitenskap med tre forkjellige begreper; reproduserbarhet, replikerbarhet og generaliserbarhet. Reproduserbarhet handler om å gjenskape resultatene fra en studie ved å bruke nøyaktig samme data og kode som den opprinnelige studien. Replikerbarhet krever at man oppnår de samme resultatene med nye, selvstendig innsamlede data og generealiserbarhet handler om hvorvidt funnene holder også i andre kontekster og populasjoner [@bollen]. @goodman2016 viser til et lignende poeng: å kalle noe reproduserbart sier først og fremst at man i teorien kan gejnta prosedyren, det sier ingenting om hvorvidt selve funnet er sant eller om det ville holdt seg dersom noen andre gjennomførte studien på ny. Reproduserbarhet er med andre ord det svakeste av de tre krevene og nettopp derfor er det interessant å spørre om det er tilstrekkelig alene.
 
 ### Hvorfor reproduserbarhet ikke er nok
 
@@ -49,10 +49,6 @@ Smarte synspunkt om emnet fra andre.
 Bruk minst 20 siteringer. Minst 5 må være nye relevante artikler om emnet som du har funnet selv.
 
 Benytt begge siteringsmåter, dvs. «in-line» og på slutten av setningen. Prøv å variere siteringsteknikk for å få flyt i språket.
-
-Example:
-
-@gentleman2003 hevder at bla bla bla. Andre mener imidlertid bla bla [@goodman2016b; @ioannidis2005b].
 
 ## Diskusjon av forskningsspørsmålet (problemstillingen)
 
