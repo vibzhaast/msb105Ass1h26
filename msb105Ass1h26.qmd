@@ -16,29 +16,23 @@ format:
 # krever at tinytex er installert
 #  pdf:
 #    papersize: a4
-bibliography: reproducibility.bib
+bibliography: nyreproducibility.bib
 abstract: "Et kort sammendrag, en til to avsnitt."
 ---
 
 ## Introduksjon
 
-Hva handler artikkelen om? Hva blir diskutert? Hvorfor er dette viktig?
-
-Reproduserbarhet handler om hvordan andre kan gjenskape forskningsresultater fra den opprinnelige utførte studien.
-
-Tillit til forskning avhenger av at resultater kan etterprøves og at en skal kunne gjenskape forskningstudier. Likevel har det vist seg at en andel fagfellesvurderte, prekliniske studier ikke er reproduserbare [@mcnutt2014].
+Reproduserbarhet handler om hvordan andre kan gjenskape forskningsresultater fra den opprinnelige utførte studien. De siste årene har mange fagfeft, inkludert innenfor økonomi, blitt kritisert for at en stor del publiserte resultater ikke lar seg bli reprodusert eller bekreftet [@mcnutt2014]. Denne oppgaven ser nærmere på hva reproduserbarhet faktisk innebærer hvordan begrepet skiller seg fra replikerbarhet og generaliserbarhet og hvilke tiltak som er forsøkt for å gjøre forskning mer etterprøvbar. Målet er å drøfte om reproduserbarhet alene er nok for at en skal kunne stole på forskningsresultater. Dette er relevant fordi tillit til tideligere funn er selve grunnlaget forskere bygger videre på og fordi falske eller ikke-reproduserbare resultater er både kostbare og vansklige å rette opp i senere [@simmons2011].
 
 ## Litteraturgjennomgang
 
 ### Reproduserbarthet, replikerbarthet og generaliserbarhet
 
-Robust og pålitelig vitenskap ...
-
-National Sciende Foundation skiller robust og pålitelig vitenskap med tre forkjellige begreper; reproduserbarhet, replikerbarhet og generaliserbarhet. Reproduserbarhet handler om å gjenskape resultatene fra en studie ved å bruke nøyaktig samme data og kode som den opprinnelige studien. Replikerbarhet krever at man oppnår de samme resultatene med nye, selvstendig innsamlede data og generealiserbarhet handler om hvorvidt funnene holder også i andre kontekster og populasjoner [@bollen]. @goodman2016 viser til et lignende poeng: å kalle noe reproduserbart sier først og fremst at man i teorien kan gejnta prosedyren, det sier ingenting om hvorvidt selve funnet er sant eller om det ville holdt seg dersom noen andre gjennomførte studien på ny. Reproduserbarhet er med andre ord det svakeste av de tre krevene og nettopp derfor er det interessant å spørre om det er tilstrekkelig alene.
+Før man drøfter om reproduserbarhet er nok, må begrepet avklares. National Sciende Foundation skiller robust og pålitelig vitenskap med tre forkjellige begreper; reproduserbarhet, replikerbarhet og generaliserbarhet. Reproduserbarhet handler om å gjenskape resultatene fra en studie ved å bruke nøyaktig samme data og kode som den opprinnelige studien. Replikerbarhet krever at man oppnår de samme resultatene med nye, selvstendig innsamlede data og generealiserbarhet handler om hvorvidt funnene holder også i andre kontekster og populasjoner [@bollen2015]. @goodman2016 viser til et lignende poeng: å kalle noe reproduserbart sier først og fremst at man i teorien kan gjenta prosedyren, det sier ingenting om hvorvidt selve funnet er sant eller om det ville holdt seg dersom noen andre gjennomførte studien på ny. @gundersen2021 viser tydligere til begrepet ved å skille reproduserbarhet fra repreterbarhet. Repeterbarhet er at de samme forskerne oppnår samme resultat når de gjentar sitt eget ekspriment, krever repoduserbarhet at et uavhengig forskerteam gjenskaper konklusjonen ved hjelp av dokumentasjonen som er delt av de opprinnelige forskerne. Han skiller mellom tre grader reproduserbarhet: utfalsreproduserbarhet, analyse-reproduserbarhet og tolkningsreproduserbarhet. Utfallsreproduserbarhet vil si der resultatet blir identisk med opprinnelig eksperiment, analyse-repoduserbarhet er der selve reultatet kan avvike så lange samme analyse fører til samme tolkning og tolkningsreproduserbarhet er der verken resultat eller analyse trenger å være like, så lange konklusjonen forblir den samme. Denne inndelingen kan legges til grunn for spørmålet @peng2011 stiller: om reproduserbarhet i det hele tatt bør være et minstekrav for pubelisering innen beregningsorientert vitenskap.
 
 ### Hvorfor reproduserbarhet ikke er nok
 
-Flere store replikasjonsstudier har vist at reproduserbarhet og replikerbarhet ikke er det samme i praksis. @nosek2015 forsøkte å replikere 100 psykologistudier fra tre anerkjente tidsskrifter, og fant at bare 36 prosent av replikasjonene ga signifikante resultater, mot 97 prosent i de opprinnelige studiene. @klein2018 gjennomførte en lignende undersøkelse av 28 klassiske funn og fant at bare 54 prosent ot seg replikere. Ingen av disse studiene bestrider at de opprinnelige resultetene i utgangspunktet var reproduserbare, koden kjørte, og tallene stemte. Problemet oppstår først når andre forskere, med nye data, forsøker å bekrefte de samme konklusjonene. Dette illustrerer et sentralt poeng: reproduserbarhet sier noe om hvorvidt man har gjort dte man sier man har gjort, ikke om hvorvidt konklusjonen faktisk er riktig. Mekanismer som publiseringsskjevhet og type 1-feil bidrar til dette gapet, fordi tidsskrifter i stor grad publiserer signifikante funn, mens studier som ikke finner noen effekt sjelden når frem [@rosenthal1979, @simmons2011].
+Flere store replikasjonsstudier har vist at reproduserbarhet og replikerbarhet ikke er det samme i praksis. @nosek2015 forsøkte å replikere 100 psykologistudier fra tre anerkjente tidsskrifter, og fant at bare 36 prosent av replikasjonene ga signifikante resultater, mot 97 prosent i de opprinnelige studiene. En lignende undersøkelse av @klein2018 tok for seg 28 klassiske funn og fant at bare 54 prosent lot seg replikere. Ingen av disse studiene bestrider at de opprinnelige resultetene i utgangspunktet var reproduserbare, koden kjørte, og tallene stemte. Problemet oppstår først når andre forskere, med nye data, forsøker å bekrefte de samme konklusjonene. Ifølge @ioannidis2005 kan falske funn utgjøre flertallet av publiserte forskningskrav i enkelte fagfelt. Mekanismer som publiteringsskjevhet og type 1-feil bidrar til dette gapet. Tidsskrifter publiserer i stor grad signifikante funn, mens studier som ikke finner noen effekt sjelden når frem, som omtales som skuffeeffekten [@rosenthal1979]. @simmons2011 peker på at falske positive resultater derfor kan være den mest kostbare feilen i forskning, nettopp fordi de er vanskelige å avkrefte i ettertid.
 
 ### Erfaringer fra økonomifaget
 
