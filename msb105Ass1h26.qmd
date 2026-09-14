@@ -40,9 +40,13 @@ Innen økonometri er situsjonen ofte enda mer grunnleggende: selv ren reproduser
 
 ## Diskusjon av forskningsspørsmålet (problemstillingen)
 
-- Burde replikerbarhet være et krav eller er det å be om for mye?
-- Kan Quarto dokumenter hjelpe med å oppnå reproduserbarhet?
-- Hvilke problem gjenstår og hvordan kan disse løses?
+### Burde replikerbarhet være et krav eller er det å be om for mye?
+
+Å kreve full replikerbarhet, at enhver studie skal bekreftes med helt nye, uavhengige data før publisering, ville i praksis stanse store deler av forskningen. Dette på grunn av at datainnsamling ofte er tid- og ressurskrevende. Samtidig viser @duvendack2015 at når replikasjon ikke er noe krav og det ikke er tidsskrifter som er villige til å publisere replikasjonsstudier, vil trolig bare et fåtall slike studier blitt gjennomført. En mulig mellomløsning er å skille krevene: reproduserbarhet bør være minstekrav for publisering, ettersom det ifølge @peng2011 kan oppnås til svært lav kostnad. Replikerbarhet er derimot mer ressurskrevende og bør heller skje gjennom egne insentiver, for eksempel at tidsskrifter setter av fast plass til replikasjonsstudier.
+
+### Kan Quarto dokumenter hjelpe med å oppnå reproduserbarhet?
+
+### Hvilke problem gjenstår og hvordan kan disse løses?
 
 ## Konklusjon
 
