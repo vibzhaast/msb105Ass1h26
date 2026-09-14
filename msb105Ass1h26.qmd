@@ -50,6 +50,8 @@ Verktøy for "beregnbare dokumenter" har vokst frem nettopp for å gjøre reprod
 
 ### Hvilke problem gjenstår og hvordan kan disse løses?
 
+Selv med gode verktøy for reproduserbarhet gjenstår flere strukturelle problemer. For det første er insentivene fortsatt skjeve. Tidsskrifter foretrekker nye, signifikante funn fremfor replikasjoner @duvendack2015, noe som opprettholder pubeliseringsskjevheten. For det andre viser @necker2014 at uhendlig forskningspraksis som selektiv repportering fortsatt er vanlig, uavhengig av hvilke tekniske verktøy som finnes. For det tredje er ikke engang tekniske dataarkiver noe garanti, ettersom @mccullough2008 fant at arkivert data og kode sjelden faktisk brukes til å reprodusere resultater. Mulige løsninger inkluderer sterkere krav fra tidsskrifter om at data og kode må deles ved innsending (ikke bare oppfordres), egne publiseringkanaler for replikasjonsstudier og nullfunn, samt bruk av verktøy som rev for å sikre at pakkeverksjoner ikke endrer resultatene over tid. Ingen av disse løsningene virker alene, det kreves en kombinasjon av takniske løsninger og endrede instntiver i forskersamfunnet.
+
 ## Konklusjon
 
 Noen kloke ord.
