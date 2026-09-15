@@ -17,7 +17,8 @@ format:
 #  pdf:
 #    papersize: a4
 bibliography: nyreproducibility.bib
-abstract: "Et kort sammendrag, en til to avsnitt."
+abstract: "Oppgaven drøfter om reproduserbarhet alene er nok for å stole på forskningsresultater. Den skiller først reproduserbarhet fra replikerbarhet og generaliserbarhet. Gjennom eksempler fra ulike fagfelt vises det at selv reproduserbare studier ofte ikke lar seg replikere og at økonomifaget sliter med at selv grunnleggende reproduserbarhetskravet sjelden innfris i praksis, blant annet på grunn av publiseringsskjevhet og selektiv rapportering.
+Konklusjonen er at reproduserbarhet bør være et minstekrav for publisering fordi det er billig å oppnå, mens replikasjon heller bør stimuleres gjennom egne insentiver siden det er mer ressurskrevende. Verktøy som Quarto løser det tekniske reproduserbarhetsproblemet, men gjør ingenting med insentivproblemene bak replikasjonskrisen - reproduserbarhet er derfor nødvendig, men ikke tilstrekkelig, for pålitelig forskning."
 ---
 
 ## Introduksjon
@@ -38,7 +39,7 @@ Flere store replikasjonsstudier har vist at reproduserbarhet og replikerbarhet i
 
 Innen økonometri er situasjonen ofte enda mer grunnleggende: selv ren reproduserbarhet er vanskelig å oppnå. @dewald1986 sto bak Journal of Money, Credit and Banking-prosjektet, som forsøkte å etterprøve over 70 publiserte studier ved å be forfatterne om data og kode, men oppnådde full reproduksjon for kun to av dem. Selv etter at tidsskrifter innførte dataarkiver som skulle løse problemet, viste @mccullough2008 at resultater publisert med tilgjengelig data og kode likevel sjelden lot seg reprodusere i praksis. Nyere studier bekrefter at problemet vedvarer: @chang2015 forsøkte å reprodusere 67 artikler fra 13 ledende økonomitidsskrifter og konkluderte med at resultatene som regel ikke kunne gjenskapes, selv ved tilgang til forfatternes egne data og kode. @duvendack2015 peker samtidig på et strukturelt problem: svært få replikasjonsstudier i økonomifaget blir i det hele tatt gjennomført eller publisert, fordi tidsskrifter sjelden prioriterer denne typen forskning. @necker2014 underbygger dette med en spørreundersøkelse blant 426 europeiske økonomer, som viser at praksiser med lav vitenskapelig integritet er utbredt i faget. 32 prosent innrømmer å ha presentert resultater selektivt og over en tredjedel har søkt etter kontrollvariabler eller stoppet analysen når de fikk ønskede resultater.
 
-## Diskusjon av forskningsspørsmålet 
+## Diskusjon av forskningsspørsmålet
 
 ### Burde replikerbarhet være et krav eller er det å be om for mye?
 
@@ -63,10 +64,24 @@ Reproduserbarhet er en nødvendig, men ikke tilstrekkelig forutsetning for påli
 
 ## Appendiks A
 
-- Versjon nummer og referanse til R pakken brukt i dokumentet
-- R versjon brukt, med referanse
+R versjonen som er brukt R 4.6.1
+
+```{r}
+#| echo: false
+#| results: asis
+pakker <- c("base", "tidyverse", "knitr")  
+for (p in pakker) {
+  print(citation(p), style = "text")
+  cat("\n\n")
+}
+```
 
 ## Appendiks B
 
-- Hvordan er KI brukt
-- Husk invitasjon til chat
+I denne oppgaven er KI tjenesten Claude brukt, versjon Claude Sonnet 5. Den kunstige intelligensen er brukt til forståelse av kilder, rettelse av tekst og skrivefeil, hjelp med å skive et norsk sammendrag av presentasjonen "Robust and Reliable Science" og brukt for hjelp til Rstudio.
+
+cse_01Lqf5SbkxMcCUeV378zj1Ph
+
+cse_018LoHGRXu7wiC7524VZY97T
+
+cse_01Ay19pzpbDrqBC9ksJJAhi3
