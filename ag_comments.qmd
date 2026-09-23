@@ -1,0 +1,21 @@
+---
+title: "Kommentarer"
+format: html
+editor: source
+bibliography: nyreproducibility.bib
+---
+
+- endret til `lang: nb` i YAML header. Ser ut til å være den som nå gir norsk bokmål som språk.
+- endret til `abstract: |`i YANL. `|` betyr at en tekst-blokk følger og er nok den korrekte måten å angi et sammendrag. Merk at tekst-avsnittene må starte med et innrykk (`tab`)
+- la `ag.bib` til i en vektor med bib-filer slik at jeg kunne legge til referanser
+- Jeg vil foreslå å sette begreper i kursiv når de introduseres. Understreker at de viktige og gjør det lette å finne tilbake til dem i teksten.
+- Jeg ville nok også satt titler/tidsskrift-navn i kursiv for å fremheve dem i teksten. Tror ikke dette er noen generell regel på norsk.
+- Du skriver:
+  - Nyere studier bekrefter at problemet vedvarer: @chang2015 forsøkte å reprodusere 67 artikler fra 13 ledende økonomitidsskrifter og konkluderte med at resultatene som regel ikke kunne gjenskapes, selv ved tilgang til forfatternes egne data og kode.
+- Jeg ville brukt punktum.
+  - Nyere studier bekrefter at problemet vedvarer. @chang2015 forsøkte å reprodusere 67 artikler fra 13 ledende økonomitidsskrifter og konkluderte med at resultatene som regel ikke kunne gjenskapes, selv ved tilgang til forfatternes egne data og kode.
+- Elegant løsning for å sitere pakker i appendiks A
+- fine «commit messages». Forsett slik!
+- Antar at `cse_01Lqf5SbkxMcCUeV378zj1Ph` viser til en delt chat, men Claude fant ikke chat-en 8-(
+- Du bruker en del kolon og semikolon i setningene dine. For meg gir det en vel kraftig dunst av KI-tekst. Jeg foretrekker å splitte opp i kortere setningen vha. punktum, men det er en smakssak.
+- Et fint og informativt paper. En ting du kanskje burde drøftet er problemet med datasett som ikke kan deles, f.eks pga. personvernhensyn. Dette gjør reproduserbarhet vanskelig. Godkjent.
