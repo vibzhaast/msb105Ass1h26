@@ -6,7 +6,7 @@ date-format: "dddd D MMM, YYYY"
 csl: apa7.csl
 # nynorsk
 #lang: no-NN
-lang: no-NB
+lang: nb
 # for typst with bibtex
 citeproc: true
 papersize: a4
@@ -17,45 +17,96 @@ format:
 #  pdf:
 #    papersize: a4
 bibliography: nyreproducibility.bib
-abstract: "Oppgaven drøfter om reproduserbarhet alene er nok for å stole på forskningsresultater. Den skiller først reproduserbarhet fra replikerbarhet og generaliserbarhet. Gjennom eksempler fra ulike fagfelt vises det at selv reproduserbare studier ofte ikke lar seg replikere og at økonomifaget sliter med at selv grunnleggende reproduserbarhetskravet sjelden innfris i praksis, blant annet på grunn av publiseringsskjevhet og selektiv rapportering.
-Konklusjonen er at reproduserbarhet bør være et minstekrav for publisering fordi det er billig å oppnå, mens replikasjon heller bør stimuleres gjennom egne insentiver siden det er mer ressurskrevende. Verktøy som Quarto løser det tekniske reproduserbarhetsproblemet, men gjør ingenting med insentivproblemene bak replikasjonskrisen - reproduserbarhet er derfor nødvendig, men ikke tilstrekkelig, for pålitelig forskning."
+abstract: |
+  Oppgaven drøfter om reproduserbarhet alene er nok for å stole på forskningsresultater. Den skiller først reproduserbarhet fra replikerbarhet og generaliserbarhet. Gjennom eksempler fra ulike fagfelt vises det at selv reproduserbare studier ofte ikke lar seg replikere og at økonomifaget sliter med at selv grunnleggende reproduserbarhetskravet sjelden innfris i praksis, blant annet på grunn av publiseringsskjevhet og selektiv rapportering.
+  
+  Konklusjonen er at reproduserbarhet bør være et minstekrav for publisering fordi det er billig å oppnå, mens replikasjon heller bør stimuleres gjennom egne insentiver siden det er mer ressurskrevende. Verktøy som Quarto løser det tekniske reproduserbarhetsproblemet, men gjør ingenting med insentivproblemene bak replikasjonskrisen - reproduserbarhet er derfor nødvendig, men ikke tilstrekkelig, for pålitelig forskning.
 ---
 
 ## Introduksjon
 
-Reproduserbarhet handler om hvordan andre kan gjenskape forskningsresultater fra den opprinnelige utførte studien. De siste årene har mange fagfelt, inkludert innenfor økonomi, blitt kritisert for at en stor del av publiserte resultater ikke lar seg reprodusere [@mcnutt2014]. Denne oppgaven ser nærmere på hva reproduserbarhet faktisk innebærer, hvordan begrepet skiller seg fra replikerbarhet og generaliserbarhet og hvilke tiltak som er forsøkt for å gjøre forskning mer etterprøvbar. Målet er å drøfte om reproduserbarhet alene er nok for at man skal kunne stole på forskningsresultater. Dette er relevant fordi tillit til tidligere funn er selve grunnlaget forskere bygger videre på og fordi falske eller ikke-reproduserbare resultater er både kostbare og vanskelige å rette opp i senere [@simmons2011].
+Reproduserbarhet handler om hvordan andre kan gjenskape forskningsresultater fra den opprinnelige utførte studien.
+De siste årene har mange fagfelt, inkludert innenfor økonomi, blitt kritisert for at en stor del av publiserte resultater ikke lar seg reprodusere [@mcnutt2014].
+Denne oppgaven ser nærmere på hva reproduserbarhet faktisk innebærer, hvordan begrepet skiller seg fra replikerbarhet og generaliserbarhet og hvilke tiltak som er forsøkt for å gjøre forskning mer etterprøvbar.
+Målet er å drøfte om reproduserbarhet alene er nok for at man skal kunne stole på forskningsresultater.
+Dette er relevant fordi tillit til tidligere funn er selve grunnlaget forskere bygger videre på og fordi falske eller ikke-reproduserbare resultater er både kostbare og vanskelige å rette opp i senere [@simmons2011].
 
 ## Litteraturgjennomgang
 
 ### Reproduserbarhet, replikerbarhet og generaliserbarhet
 
-Før man drøfter om reproduserbarhet er nok, må begrepet avklares. National Science Foundation skiller robust og pålitelig vitenskap ved hjelp av tre begreper: reproduserbarhet, replikerbarhet og generaliserbarhet. Reproduserbarhet handler om å gjenskape resultatene fra en studie ved å bruke nøyaktig samme data og kode som den opprinnelige studien. Replikerbarhet krever at man oppnår de samme resultatene med nye, selvstendig innsamlede data og generaliserbarhet handler om hvorvidt funnene holder også i andre kontekster og populasjoner [@bollen2015]. @goodman2016 viser til et lignende poeng: å kalle noe reproduserbart sier først og fremst at man i teorien kan gjenta prosedyren, det sier ingenting om hvorvidt selve funnet er sant eller om det ville holdt seg dersom noen andre gjennomførte studien på ny. @gundersen2021 viser tydeligere til begrepet ved å skille reproduserbarhet fra repeterbarhet. Repeterbarhet er at de samme forskerne oppnår samme resultat når de gjentar sitt eget eksperiment, mens reproduserbarhet krever at et uavhengig forskerteam gjenskaper konklusjonen ved hjelp av dokumentasjonen som er delt av de opprinnelige forskerne. Han skiller mellom tre grader av reproduserbarhet: utfallsreproduserbarhet, analyse-reproduserbarhet og tolkningsreproduserbarhet. Utfallsreproduserbarhet vil si at resultatet blir identisk med opprinnelig eksperiment. Analysereproduserbarhet er at selve resultatet kan avvike så lenge samme analyse fører til samme tolkning. Tolkningsreproduserbarhet er at verken resultat eller analyse trenger å være like, så lenge konklusjonen forblir den samme. Denne inndelingen kan legges til grunn for spørsmålet @peng2011 stiller: om reproduserbarhet i det hele tatt bør være et minstekrav for publisering innen beregningsorientert vitenskap.
+Før man drøfter om reproduserbarhet er nok, må begrepet avklares.
+National Science Foundation skiller robust og pålitelig vitenskap ved hjelp av tre begreper: reproduserbarhet, replikerbarhet og generaliserbarhet.
+*Reproduserbarhet* handler om å gjenskape resultatene fra en studie ved å bruke nøyaktig samme data og kode som den opprinnelige studien.
+*Replikerbarhet* krever at man oppnår de samme resultatene med nye, selvstendig innsamlede data og *generaliserbarhet* handler om hvorvidt funnene holder også i andre kontekster og populasjoner [@bollen2015].
+@goodman2016 viser til et lignende poeng: å kalle noe reproduserbart sier først og fremst at man i teorien kan gjenta prosedyren, det sier ingenting om hvorvidt selve funnet er sant eller om det ville holdt seg dersom noen andre gjennomførte studien på ny.
+@gundersen2021 viser tydeligere til begrepet ved å skille reproduserbarhet fra repeterbarhet.
+Repeterbarhet er at de samme forskerne oppnår samme resultat når de gjentar sitt eget eksperiment, mens reproduserbarhet krever at et uavhengig forskerteam gjenskaper konklusjonen ved hjelp av dokumentasjonen som er delt av de opprinnelige forskerne.
+Han skiller mellom tre grader av reproduserbarhet: utfallsreproduserbarhet, analyse-reproduserbarhet og tolkningsreproduserbarhet.
+*Utfallsreproduserbarhet* vil si at resultatet blir identisk med opprinnelig eksperiment.
+*Analysereproduserbarhet* er at selve resultatet kan avvike så lenge samme analyse fører til samme tolkning.
+*Tolkningsreproduserbarhet* er at verken resultat eller analyse trenger å være like, så lenge konklusjonen forblir den samme.
+Denne inndelingen kan legges til grunn for spørsmålet @peng2011 stiller: bør reproduserbarhet være et minstekrav for publisering innen beregningsorientert vitenskap.
 
 ### Hvorfor reproduserbarhet ikke er nok
 
-Flere store replikasjonsstudier har vist at reproduserbarhet og replikerbarhet ikke er det samme i praksis. @nosek2015 forsøkte å replikere 100 psykologistudier fra tre anerkjente tidsskrifter, og fant at bare 36 prosent av replikasjonene ga signifikante resultater, mot 97 prosent i de opprinnelige studiene. En lignende undersøkelse av @klein2018 tok for seg 28 klassiske funn og fant at bare 54 prosent lot seg replikere. Ingen av disse studiene bestrider at de opprinnelige resultatene i utgangspunktet var reproduserbare: koden kjørte, og tallene stemte. Problemet oppstår først når andre forskere, med nye data, forsøker å bekrefte de samme konklusjonene. Ifølge @ioannidis2005 kan falske funn utgjøre flertallet av publiserte forskningsresultater i enkelte fagfelt. Mekanismer som publiseringsskjevhet og type 1-feil bidrar til dette gapet. Tidsskrifter publiserer i stor grad signifikante funn, mens studier som ikke finner noen effekt sjelden når frem, som omtales som "File Drawer Problem" [@rosenthal1979]. @simmons2011 peker på at falske positive resultater derfor kan være den mest kostbare feilen i forskning, nettopp fordi de er vanskelige å avkrefte i ettertid.
+Flere store replikasjonsstudier har vist at reproduserbarhet og replikerbarhet ikke er det samme i praksis.
+@nosek2015 forsøkte å replikere 100 psykologistudier fra tre anerkjente tidsskrifter, og fant at bare 36 prosent av replikasjonene ga signifikante resultater, mot 97 prosent i de opprinnelige studiene.
+En lignende undersøkelse av @klein2018 tok for seg 28 klassiske funn og fant at bare 54 prosent lot seg replikere.
+Ingen av disse studiene bestrider at de opprinnelige resultatene i utgangspunktet var reproduserbare: koden kjørte, og tallene stemte.
+Problemet oppstår først når andre forskere, med nye data, forsøker å bekrefte de samme konklusjonene.
+Ifølge @ioannidis2005 kan falske funn utgjøre flertallet av publiserte forskningsresultater i enkelte fagfelt.
+Mekanismer som publiseringsskjevhet og type 1-feil bidrar til dette gapet.
+Tidsskrifter publiserer i stor grad signifikante funn, mens studier som ikke finner noen effekt sjelden når frem. Dette fenomenet omtales gjerne som «The File Drawer Problem» [@rosenthal1979].
+@simmons2011 peker på at falske positive resultater derfor kan være den mest kostbare feilen i forskning, nettopp fordi de er vanskelige å avkrefte i ettertid.
 
 ### Erfaringer fra økonomifaget
 
-Innen økonometri er situasjonen ofte enda mer grunnleggende: selv ren reproduserbarhet er vanskelig å oppnå. @dewald1986 sto bak Journal of Money, Credit and Banking-prosjektet, som forsøkte å etterprøve over 70 publiserte studier ved å be forfatterne om data og kode, men oppnådde full reproduksjon for kun to av dem. Selv etter at tidsskrifter innførte dataarkiver som skulle løse problemet, viste @mccullough2008 at resultater publisert med tilgjengelig data og kode likevel sjelden lot seg reprodusere i praksis. Nyere studier bekrefter at problemet vedvarer: @chang2015 forsøkte å reprodusere 67 artikler fra 13 ledende økonomitidsskrifter og konkluderte med at resultatene som regel ikke kunne gjenskapes, selv ved tilgang til forfatternes egne data og kode. @duvendack2015 peker samtidig på et strukturelt problem: svært få replikasjonsstudier i økonomifaget blir i det hele tatt gjennomført eller publisert, fordi tidsskrifter sjelden prioriterer denne typen forskning. @necker2014 underbygger dette med en spørreundersøkelse blant 426 europeiske økonomer, som viser at praksiser med lav vitenskapelig integritet er utbredt i faget. 32 prosent innrømmer å ha presentert resultater selektivt og over en tredjedel har søkt etter kontrollvariabler eller stoppet analysen når de fikk ønskede resultater.
+Innen økonometri er situasjonen ofte enda mer grunnleggende: selv ren reproduserbarhet er vanskelig å oppnå.
+@dewald1986 sto bak *Journal of Money, Credit and Banking*-prosjektet, som forsøkte å etterprøve over 70 publiserte studier ved å be forfatterne om data og kode, men oppnådde full reproduksjon for kun to av dem.
+Selv etter at tidsskrifter innførte dataarkiver som skulle løse problemet, viste @mccullough2008 at resultater publisert med tilgjengelig data og kode likevel sjelden lot seg reprodusere i praksis.
+Nyere studier bekrefter at problemet vedvarer: @chang2015 forsøkte å reprodusere 67 artikler fra 13 ledende økonomitidsskrifter og konkluderte med at resultatene som regel ikke kunne gjenskapes, selv ved tilgang til forfatternes egne data og kode.
+@duvendack2015 peker samtidig på et strukturelt problem: svært få replikasjonsstudier i økonomifaget blir i det hele tatt gjennomført eller publisert, fordi tidsskrifter sjelden prioriterer denne typen forskning.
+@necker2014 underbygger dette med en spørreundersøkelse blant 426 europeiske økonomer, som viser at praksiser med lav vitenskapelig integritet er utbredt i faget.
+32 prosent innrømmer å ha presentert resultater selektivt og over en tredjedel har søkt etter kontrollvariabler eller stoppet analysen når de fikk ønskede resultater.
 
 ## Diskusjon av forskningsspørsmålet
 
 ### Burde replikerbarhet være et krav eller er det å be om for mye?
 
-Å kreve full replikerbarhet, at enhver studie skal bekreftes med helt nye, uavhengige data før publisering, ville i praksis stanse store deler av forskningen. Dette skyldes at datainnsamling ofte er tid- og ressurskrevende. Samtidig viser @duvendack2015 at når replikasjon ikke er noe krav og det ikke er tidsskrifter som er villige til å publisere replikasjonsstudier, vil trolig bare et fåtall slike studier bli gjennomført. En mulig mellomløsning er å skille kravene: reproduserbarhet bør være et minstekrav for publisering, ettersom det ifølge @peng2011 kan oppnås til svært lav kostnad. Replikerbarhet er derimot mer ressurskrevende og bør heller skje gjennom egne insentiver, for eksempel at tidsskrifter setter av fast plass til replikasjonsstudier.
+Å kreve full replikerbarhet, at enhver studie skal bekreftes med helt nye, uavhengige data før publisering, ville i praksis stanse store deler av forskningen.
+Dette skyldes at datainnsamling ofte er tid- og ressurskrevende.
+Samtidig viser @duvendack2015 at når replikasjon ikke er noe krav og det ikke er tidsskrifter som er villige til å publisere replikasjonsstudier, vil trolig bare et fåtall slike studier bli gjennomført.
+En mulig mellomløsning er å skille kravene: reproduserbarhet bør være et minstekrav for publisering, ettersom det ifølge @peng2011 kan oppnås til svært lav kostnad.
+Replikerbarhet er derimot mer ressurskrevende og bør heller skje gjennom egne insentiver, for eksempel at tidsskrifter setter av fast plass til replikasjonsstudier.
 
 ### Kan Quarto dokumenter hjelpe med å oppnå reproduserbarhet?
 
-Verktøy for "beregnbare dokumenter" har vokst frem nettopp for å gjøre reproduserbarhet enklere. Sweave @leisch2002 og senere Knitr @xie2015 gjorde det mulig å kombinere kjørbar kode og tekst i samme dokument, men R Markdown @allaire2020 og utviklingsmiljøet RStudio @rstudioteam2020 bygget videre på denne ideen. Quarto er en nyere utvikling og videreføring av dette og kan generere output i flere formater samtidig som det støtter kode, referanser og matematikk i ett og samme dokument. Dette gjør det mulig å oppnå det @gundersen2021 kaller den høyeste graden av reproduserbarhet - der tekst, kode og data deles samlet, tilsvarende @gentleman2007 sitt begrep "compendium". Quarto løser dermed det tekniske reproduserbarhetsproblemet på en god måte. Verktøyet er derimot ingen garanti i seg selv: det sikrer bare at koden kan kjøres på nytt av andre; det gjør ingenting med publiseringsskjevhet, insentivproblemer eller manglende generaliserbarhet. Quarto er med andre ord et nødvendig, men ikke tilstrekkelig verktøy for robust og pålitelig vitenskap.
+Verktøy for "beregnbare dokumenter" har vokst frem nettopp for å gjøre reproduserbarhet enklere.
+Sweave @leisch2002 og senere Knitr @xie2015 gjorde det mulig å kombinere kjørbar kode og tekst i samme dokument, men R Markdown @allaire2020 og utviklingsmiljøet RStudio @rstudioteam2020 bygget videre på denne ideen.
+Quarto er en nyere utvikling og videreføring av dette og kan generere output i flere formater samtidig som det støtter kode, referanser og matematikk i ett og samme dokument.
+Dette gjør det mulig å oppnå det @gundersen2021 kaller den høyeste graden av reproduserbarhet - der tekst, kode og data deles samlet, tilsvarende @gentleman2007 sitt begrep "compendium".
+Quarto løser dermed det tekniske reproduserbarhetsproblemet på en god måte.
+Verktøyet er derimot ingen garanti i seg selv: det sikrer bare at koden kan kjøres på nytt av andre; det gjør ingenting med publiseringsskjevhet, insentivproblemer eller manglende generaliserbarhet.
+Quarto er med andre ord et nødvendig, men ikke tilstrekkelig verktøy for robust og pålitelig vitenskap.
 
 ### Hvilke problem gjenstår og hvordan kan disse løses?
 
-Selv med gode verktøy for reproduserbarhet gjenstår flere strukturelle problemer. For det første er insentivene fortsatt skjeve. Tidsskrifter foretrekker nye, signifikante funn fremfor replikasjoner @duvendack2015, noe som opprettholder publiseringsskjevheten. For det andre viser @necker2014 at uheldig forskningspraksis som selektiv rapportering fortsatt er vanlig, uavhengig av hvilke tekniske verktøy som finnes. For det tredje er ikke engang tekniske dataarkiver noen garanti, ettersom @mccullough2008 fant at arkivert data og kode sjelden faktisk brukes til å reprodusere resultater. Mulige løsninger inkluderer sterkere krav fra tidsskrifter om at data og kode må deles ved innsending (ikke bare oppfordres), egne publiseringskanaler for replikasjonsstudier og nullfunn, samt bruk av verktøy som renv for å sikre at pakkeversjoner ikke endrer resultatene over tid. Ingen av disse løsningene virker alene, men det kreves en kombinasjon av tekniske løsninger og endrede insentiver i forskersamfunnet.
+Selv med gode verktøy for reproduserbarhet gjenstår flere strukturelle problemer.
+For det første er insentivene fortsatt skjeve.
+Tidsskrifter foretrekker nye, signifikante funn fremfor replikasjoner @duvendack2015, noe som opprettholder publiseringsskjevheten.
+For det andre viser @necker2014 at uheldig forskningspraksis som selektiv rapportering fortsatt er vanlig, uavhengig av hvilke tekniske verktøy som finnes.
+For det tredje er ikke engang tekniske dataarkiver noen garanti, ettersom @mccullough2008 fant at arkivert data og kode sjelden faktisk brukes til å reprodusere resultater.
+Mulige løsninger inkluderer sterkere krav fra tidsskrifter om at data og kode må deles ved innsending (ikke bare oppfordres), egne publiseringskanaler for replikasjonsstudier og nullfunn, samt bruk av verktøy som renv for å sikre at pakkeversjoner ikke endrer resultatene over tid.
+Ingen av disse løsningene virker alene, men det kreves en kombinasjon av tekniske løsninger og endrede insentiver i forskersamfunnet.
 
 ## Konklusjon
 
-Reproduserbarhet er en nødvendig, men ikke tilstrekkelig forutsetning for pålitelig forskning. Det sikrer at andre kan etterprøve at man har gjort det man sier man har gjort, men sier lite om hvorvidt konklusjonen faktisk er sann eller holder i andre sammenhenger. Erfaringene fra økonomifaget viser dessuten at selv dette minstekravet ofte ikke innfris i praksis. Verktøy som Quarto gjør den tekniske jobben enklere, men løser ikke insentivproblemene som ligger bak replikasjonskrisen. Skal forskning virkelig fortjene tillit, må teknisk åpenhet derfor følges av en kultur der replikasjon verdsettes like høyt som nye funn.
+Reproduserbarhet er en nødvendig, men ikke tilstrekkelig forutsetning for pålitelig forskning.
+Det sikrer at andre kan etterprøve at man har gjort det man sier man har gjort, men sier lite om hvorvidt konklusjonen faktisk er sann eller holder i andre sammenhenger.
+Erfaringene fra økonomifaget viser dessuten at selv dette minstekravet ofte ikke innfris i praksis.
+Verktøy som Quarto gjør den tekniske jobben enklere, men løser ikke insentivproblemene som ligger bak replikasjonskrisen.
+Skal forskning virkelig fortjene tillit, må teknisk åpenhet derfor følges av en kultur der replikasjon verdsettes like høyt som nye funn.
 
 ## Referanser
 
@@ -78,7 +129,8 @@ for (p in pakker) {
 
 ## Appendiks B
 
-I denne oppgaven er KI tjenesten Claude brukt, versjon Claude Sonnet 5. Den kunstige intelligensen er brukt til forståelse av kilder, rettelse av tekst og skrivefeil, hjelp med å skive et norsk sammendrag av presentasjonen "Robust and Reliable Science" og brukt for hjelp til Rstudio.
+I denne oppgaven er KI tjenesten Claude brukt, versjon Claude Sonnet 5.
+Den kunstige intelligensen er brukt til forståelse av kilder, rettelse av tekst og skrivefeil, hjelp med å skive et norsk sammendrag av presentasjonen "Robust and Reliable Science" og brukt for hjelp til Rstudio.
 
 cse_01Lqf5SbkxMcCUeV378zj1Ph
 
